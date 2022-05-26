@@ -1,84 +1,115 @@
-import {Product} from "./types";
+import { Product } from "./types";
 
-const description=["SOMOS MULTIVENTAS AZ",
-"MERCADOLIBRE PLATINUM UNOS DE LOS MEJORES VENDEDORES EN EL SITIO!!!",
-"",
-"Te presentamos:",
-"PELUCHE STITCH AZUL Y ROSA",
-"PRECIO POR UNIDAD",
-"",
-"TAMBIÉN TENEMOS MÁS TAMAÑOS","",
-"LLÉVATE AL MEJOR PRECIO",
-"",
-"Excelente calidad y diseño Premiun",
-"Ojos bordados y relleno de vellón súper soft",
-"Muy suave y más hermoso que nunca!!",
-"",
-"Descripción:",
-"20cm de alto aprox",
+const description = [
+  "SOMOS MULTIVENTAS AZ",
+  "MERCADOLIBRE PLATINUM UNOS DE LOS MEJORES VENDEDORES EN EL SITIO!!!",
+  "",
+  "Te presentamos:",
+  "PELUCHE STITCH AZUL Y ROSA",
+  "PRECIO POR UNIDAD",
+  "",
+  "TAMBIÉN TENEMOS MÁS TAMAÑOS",
+  "",
+  "LLÉVATE AL MEJOR PRECIO",
+  "",
+  "Excelente calidad y diseño Premiun",
+  "Ojos bordados y relleno de vellón súper soft",
+  "Muy suave y más hermoso que nunca!!",
+  "",
+  "Descripción:",
+  "20cm de alto aprox",
 
-"",
-"HACEMOS PRECIO POR MAYOR",
+  "",
+  "HACEMOS PRECIO POR MAYOR",
 
-"( EL MEJOR PRECIO DEL MERCADO)",
+  "( EL MEJOR PRECIO DEL MERCADO)",
 
+  "",
+  "FOTOS REALES DEL PRODUCTO",
 
-"",
-"FOTOS REALES DEL PRODUCTO",
+  "",
+  "EL PRECIO ES POR UNIDAD",
 
+  "",
+  "Hacemos descuentoPORMAYOR…",
 
-"",
-"EL PRECIO ES POR UNIDAD",
+  "",
+  "Estamos Ubicados:",
 
+  "-En Balvanera (MicroCentro)",
 
-"",
-"Hacemos descuentoPORMAYOR…",
+  "a 6 cuadras de las Av.CALLAO Y Av.CORRIENTES",
 
+  "A 5 cuadras de Puerrydon y Rivadavia",
 
-"",
-"Estamos Ubicados:",
+  "",
+  "Horarios de Atención:",
+  "-Lunes a Viernes: 10hs a 18hs",
+  "-Sábados: 10 a 14hs",
 
-"-En Balvanera (MicroCentro)",
+  "",
+  "MÉTODOS DE ENVIOS:",
 
-"a 6 cuadras de las Av.CALLAO Y Av.CORRIENTES",
-
-"A 5 cuadras de Puerrydon y Rivadavia",
-
-"",
-"Horarios de Atención:",
-"-Lunes a Viernes: 10hs a 18hs",
-"-Sábados: 10 a 14hs",
-
-"",
-"MÉTODOS DE ENVIOS:",
-
-"",
-`-HACEMOS ENVIOS A TODO EL PAIS MEDIANTE MERCADOENVIOS (SE ENVÍA EL
+  "",
+  `-HACEMOS ENVIOS A TODO EL PAIS MEDIANTE MERCADOENVIOS (SE ENVÍA EL
 MISMO DÍA O AL SIGUIENTE SEGÚN EL HORARIO DE COMPRA)`,
 
-"",
-`-HACEMOS ENVÍOS AL DÍA MEDIANTE ENVIOS FLEX TE LLEGA EL MISMO DÍA
+  "",
+  `-HACEMOS ENVÍOS AL DÍA MEDIANTE ENVIOS FLEX TE LLEGA EL MISMO DÍA
 SI REALIZAS LA COMPRA ANTES DE LAS 15hs (el tiempo de demora es
 según el cadete que te puede llegar entre las 17 a 22hs)`,
 
-"",
-`IMPORTANTE: Debajo de cada publicación puede ver los productos que
+  "",
+  `IMPORTANTE: Debajo de cada publicación puede ver los productos que
 tenemos publicados en "Más publicaciones del Vendedor", si usted
 va a realizar la compra con Mercadoenvíos por más de un producto y
 quiere abonar un solo envío puede seleccionar la opción de agregar
 en el carrito.`,
 
-"",
-"Tu consulta no molesta, preguntar ante cualquier duda.",
-`Recorda que tu oferta es un compromiso de compra y deberás
+  "",
+  "Tu consulta no molesta, preguntar ante cualquier duda.",
+  `Recorda que tu oferta es un compromiso de compra y deberás
 comunicarte dentro de los 2-3 dias luego de la misma.`,
 
-"",
-"Visita mis otros artículos publicados. DESDE YA GRACIAS",
-"",
-"",
-]
+  "",
+  "Visita mis otros artículos publicados. DESDE YA GRACIAS",
+  "",
+  "",
+];
 
+const promocioned = [
+  {
+    image:
+      "https://http2.mlstatic.com/D_Q_NP_2X_957846-MLA50035211361_052022-AB.webp",
+    price: "$ 2.650",
+    title: "Peluche Stitch 25cm Muy Suaves Oferta!!!",
+    shop:"TEDDYPLANET21"
+  },
+  {
+    image:
+      "https://http2.mlstatic.com/D_Q_NP_2X_812266-MLA49030257808_022022-AB.webp",
+    price: "$ 1.590",
+    title: "Peluche Stitch 20cm Importado Elegí Tu Modelo",
+    shop:"ACHUBAE JUGUETERIA"
+  },
+  {
+    image:
+      "https://http2.mlstatic.com/D_Q_NP_2X_677992-MLA46225422565_052021-AB.webp",
+    price: "$ 2.149",
+    title: "Peluche Almohada Soft Animales Acostados 46cm Largo",
+    shop:"DELTOMATE JUGUETERIA"
+  },
+  {
+    image:
+      "https://http2.mlstatic.com/D_Q_NP_2X_976907-MLA43261987950_082020-AB.webp",
+    price: "$ 2.650",
+    title: "Peluche De Stitch Con Sonido",
+    originalPrice: "$ 7.498",
+    discount: "5% OFF",
+    shipping: ["Envio gratis", "FULL"],
+    shop:"FUN_FANTASY"
+  },
+];
 export default {
   get product(): Product {
     return {
@@ -105,13 +136,16 @@ export default {
       permalink:
         "https://articulo.mercadolibre.com.ar/MLA-741093357-peluche-stitch-angel-lilo-1-metro-100cm-reales-gigante-_JM",
       thumbnail_id: "978173-MLA32582347639_102019",
-      thumbnail: "http://http2.mlstatic.com/D_978173-MLA32582347639_102019-I.jpg",
-      secure_thumbnail: "https://http2.mlstatic.com/D_978173-MLA32582347639_102019-I.jpg",
+      thumbnail:
+        "http://http2.mlstatic.com/D_978173-MLA32582347639_102019-I.jpg",
+      secure_thumbnail:
+        "https://http2.mlstatic.com/D_978173-MLA32582347639_102019-I.jpg",
       pictures: [
         {
           id: "978173-MLA32582347639_102019",
           url: "http://http2.mlstatic.com/D_978173-MLA32582347639_102019-O.jpg",
-          secure_url: "https://http2.mlstatic.com/D_978173-MLA32582347639_102019-O.jpg",
+          secure_url:
+            "https://http2.mlstatic.com/D_978173-MLA32582347639_102019-O.jpg",
           size: "500x496",
           max_size: "1200x1192",
           quality: "",
@@ -119,7 +153,8 @@ export default {
         {
           id: "754004-MLA32299823528_092019",
           url: "http://http2.mlstatic.com/D_754004-MLA32299823528_092019-O.jpg",
-          secure_url: "https://http2.mlstatic.com/D_754004-MLA32299823528_092019-O.jpg",
+          secure_url:
+            "https://http2.mlstatic.com/D_754004-MLA32299823528_092019-O.jpg",
           size: "500x396",
           max_size: "1200x951",
           quality: "",
@@ -127,7 +162,8 @@ export default {
         {
           id: "616691-MLA27900381255_082018",
           url: "http://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
-          secure_url: "https://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
+          secure_url:
+            "https://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
           size: "500x500",
           max_size: "800x800",
           quality: "",
@@ -135,7 +171,8 @@ export default {
         {
           id: "918230-MLA31424182281_072019",
           url: "http://http2.mlstatic.com/D_918230-MLA31424182281_072019-O.jpg",
-          secure_url: "https://http2.mlstatic.com/D_918230-MLA31424182281_072019-O.jpg",
+          secure_url:
+            "https://http2.mlstatic.com/D_918230-MLA31424182281_072019-O.jpg",
           size: "281x500",
           max_size: "1080x1920",
           quality: "",
@@ -495,5 +532,6 @@ export default {
       channels: ["marketplace"],
     };
   },
-  description
+  description,
+  promocioned
 };

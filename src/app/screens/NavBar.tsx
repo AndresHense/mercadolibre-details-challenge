@@ -50,7 +50,7 @@ const NavBar = () => {
             <HStack spacing={1}>
               <Icon as={GoLocation} fontSize="2xl" color="gray.600" />
               <VStack lineHeight={1} align="start" spacing={0}>
-                <Text color="gray.500" fontSize="xs" fontWeight="normal">
+                <Text color="gray.600" fontSize="xs" fontWeight="normal">
                   Enviar a{" "}
                 </Text>
                 <Text color="gray.900" fontSize="sm" fontWeight="normal">
