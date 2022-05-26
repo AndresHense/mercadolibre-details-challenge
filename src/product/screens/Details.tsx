@@ -79,9 +79,10 @@ const DetailsScreen: React.FC<Props> = ({ product = mock.product }) => {
         borderWidth="1px"
         px={4}
         mt={3}
+        h="100%"
       >
-        <VStack w="70%">
-          <HStack px={0} align="start" alignSelf="start" py={4}>
+        <VStack w="80%">
+          <HStack px={0} w="100%" align="start" alignSelf="start" py={4}>
             <VStack h="100%">
               {mock.product.pictures.map((picture,index) => (
                 <Box borderColor="gray.300" borderWidth="2px" borderRadius={7} key={index}>
@@ -97,7 +98,7 @@ const DetailsScreen: React.FC<Props> = ({ product = mock.product }) => {
               ))}
             </VStack>
             <Flex justify="center" align="center" w="100%">
-            <Image justifySelf="center" src={mock.product.pictures[0].url} w="100%" />
+            <Image justifySelf="center" src={mock.product.pictures[0].url}  />
             </Flex>
           </HStack>
           <VStack w="100%" px={8} spacing={8}>
