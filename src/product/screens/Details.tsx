@@ -176,12 +176,14 @@ const DetailsScreen: React.FC<Props> = ({ product = mock.product }) => {
             <Text fontSize="2xl" textAlign="start" w="100%">
               Descripcion
             </Text>
+            <VStack align="start" lineHeight={1}>
               {mock.description.map((paragraph,index) => (
                 <Text color="gray.500" fontSize="xl" key={index}>
                   {paragraph}
                   <br />
                 </Text>
               ))}
+              </VStack>
             <Text fontSize="2xl" w="100%" textAlign="start">
               Preguntas y respuestas
             </Text>

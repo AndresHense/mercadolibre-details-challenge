@@ -36,8 +36,8 @@ export default extendTheme({
     },
   },
   fonts: {
-    body: "Proxima Nova",
-    heading: "Proxima Nova",
+    body: "Proxima Nova,Helvetica",
+    heading: "Proxima Nova,Helvetica",
   },
   components: {
     Link: {
