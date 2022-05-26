@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <Flex align="center" justify="center" w="92%" bg="white" >
+    <Flex align="center" justify="center" w="92%" bg="white" direction="column">
         <VStack align="start" py={2} spacing={1}>
             <HStack fontSize="sm" >
                 <Link color="gray.700" _hover={{color:"black"}}>Trabajá con nosotros</Link>

@@ -453,6 +453,7 @@ const DetailsSidebar = () => {
             Compra en tiendas como si fuera de Comercio Abierto
           </Text>
         </VStack>
+        
       </VStack>
     </VStack>
   );
