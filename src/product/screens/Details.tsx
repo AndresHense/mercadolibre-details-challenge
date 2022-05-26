@@ -97,7 +97,7 @@ const DetailsScreen: React.FC<Props> = ({ product = mock.product }) => {
               ))}
             </VStack>
             <Flex justify="center" align="center" w="100%">
-            <Image justifySelf="center" w="100%" src={mock.product.pictures[0].url} w="100%" />
+            <Image justifySelf="center" src={mock.product.pictures[0].url} w="100%" />
             </Flex>
           </HStack>
           <VStack w="100%" px={8} spacing={8}>
