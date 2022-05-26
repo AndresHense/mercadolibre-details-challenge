@@ -83,10 +83,10 @@ const DetailsScreen: React.FC<Props> = ({ product = mock.product }) => {
         <VStack w="70%">
           <HStack px={0} align="start" alignSelf="start" py={4}>
             <VStack h="100%">
-              {mock.product.pictures.map((picture) => (
-                <Box borderColor="gray.300" borderWidth="2px" borderRadius={7}>
+              {mock.product.pictures.map((picture,index) => (
+                <Box borderColor="gray.300" borderWidth="2px" borderRadius={7} key={index}>
                   <Image
-                    key={picture.id}
+                    key={index}
                     src={picture.url}
                     w={12}
                     h={12}
@@ -119,7 +119,7 @@ const DetailsScreen: React.FC<Props> = ({ product = mock.product }) => {
               Ver más publicaciones del vendedor
             </Text>
             <Divider />
-            <Text fontSize="2xl" w="100%" Textalign="start">
+            <Text fontSize="2xl" w="100%" textalign="start">
               Caracteristicas Principales
             </Text>
             <TableContainer w="100%">
@@ -176,14 +176,12 @@ const DetailsScreen: React.FC<Props> = ({ product = mock.product }) => {
             <Text fontSize="2xl" textAlign="start" w="100%">
               Descripcion
             </Text>
-            <Text color="gray.500" fontSize="xl">
-              {mock.description.map((paragraph) => (
-                <Text>
+              {mock.description.map((paragraph,index) => (
+                <Text color="gray.500" fontSize="xl" key={index}>
                   {paragraph}
                   <br />
                 </Text>
               ))}
-            </Text>
             <Text fontSize="2xl" w="100%" textAlign="start">
               Preguntas y respuestas
             </Text>

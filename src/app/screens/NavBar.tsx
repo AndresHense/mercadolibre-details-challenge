@@ -38,12 +38,14 @@ const NavBar = () => {
               <Icon as={BsSearch} />
             </InputRightElement>
           </InputGroup>
+          <HStack>
           <Text>
-            Subscribite al nivel 6 por solo{" "}
-            <Text as="span" fontWeight="bold">
+            Subscribite al nivel 6 por solo{" "}   
+          </Text>
+          <Text as="span" fontWeight="bold">
               $399
             </Text>
-          </Text>
+            </HStack>
         </HStack>
         <HStack spacing={4} mb={-2}>
           <Button variant="unstyled">

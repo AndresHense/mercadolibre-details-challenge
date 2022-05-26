@@ -12,7 +12,7 @@ const ListProducts = ({ max, title, products }: Props) => {
     <VStack align="start">
       <Text fontSize="2xl">{title}</Text>
       <HStack spacing={4}>
-        {products.slice(0, max).map((product) => (
+        {products.slice(0, max).map((product,index) => (
           <VStack
             w="224px"
             borderColor="grey.200"
@@ -22,6 +22,7 @@ const ListProducts = ({ max, title, products }: Props) => {
             borderWidth="1px"
             align="start"
             _hover={{ boxShadow: "1px 1px 4px gray" }}
+            key={index}
           >
             <Image
               src={product.pictures[0].url}
