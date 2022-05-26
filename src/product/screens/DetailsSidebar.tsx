@@ -412,10 +412,10 @@ const DetailsSidebar = () => {
               </HStack>
               <HStack spacing={1}>
                 <Text fontSize="sm" color="green.400" fontWeight="medium">
-                  {product?.shipping?.length > 0 ? product?.shipping[0] : ""}
+                  {product.shipping && product?.shipping?.length > 0 ? product?.shipping[0] : ""}
                 </Text>
                 <Icon
-                  display={product?.shipping?.lengt > 0 ? "inherit" : "none"}
+                  display={ product.shipping && product?.shipping?.length > 0 ? "inherit" : "none"}
                   as={BsLightningFill}
                   color="green.500"
                   fontSize="sm"
@@ -426,7 +426,7 @@ const DetailsSidebar = () => {
                   fontWeight="bold"
                   textStyle="italic"
                 >
-                  {product?.shipping?.length > 0 ? product?.shipping[1] : ""}
+                  {product.shipping && product?.shipping?.length > 0 ? product?.shipping[1] : ""}
                 </Text>
               </HStack>
               <Text fontSize="sm">Peluche De Stitch Con Sonido</Text>

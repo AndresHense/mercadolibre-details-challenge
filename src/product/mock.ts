@@ -83,21 +83,21 @@ const promocioned = [
       "https://http2.mlstatic.com/D_Q_NP_2X_957846-MLA50035211361_052022-AB.webp",
     price: "$ 2.650",
     title: "Peluche Stitch 25cm Muy Suaves Oferta!!!",
-    shop:"TEDDYPLANET21"
+    shop: "TEDDYPLANET21",
   },
   {
     image:
       "https://http2.mlstatic.com/D_Q_NP_2X_812266-MLA49030257808_022022-AB.webp",
     price: "$ 1.590",
     title: "Peluche Stitch 20cm Importado Elegí Tu Modelo",
-    shop:"ACHUBAE JUGUETERIA"
+    shop: "ACHUBAE JUGUETERIA",
   },
   {
     image:
       "https://http2.mlstatic.com/D_Q_NP_2X_677992-MLA46225422565_052021-AB.webp",
     price: "$ 2.149",
     title: "Peluche Almohada Soft Animales Acostados 46cm Largo",
-    shop:"DELTOMATE JUGUETERIA"
+    shop: "DELTOMATE JUGUETERIA",
   },
   {
     image:
@@ -107,7 +107,7 @@ const promocioned = [
     originalPrice: "$ 7.498",
     discount: "5% OFF",
     shipping: ["Envio gratis", "FULL"],
-    shop:"FUN_FANTASY"
+    shop: "FUN_FANTASY",
   },
 ];
 export default {
@@ -533,5 +533,5 @@ export default {
     };
   },
   description,
-  promocioned
+  promocioned,
 };
